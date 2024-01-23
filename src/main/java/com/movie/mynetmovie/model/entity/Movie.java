@@ -45,4 +45,12 @@ public class Movie {
         inverseJoinColumns = @JoinColumn(name = "actor_id")
     )
     private List<Actor> actors;
+
+    @ManyToMany
+    @JoinTable(
+        name = "movie_language",
+        joinColumns = @JoinColumn(name = "movie_id"),
+        inverseJoinColumns = @JoinColumn(name = "language_id")
+    )
+    private List<Language> languages;
 }

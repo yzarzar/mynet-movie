@@ -37,6 +37,10 @@ public class ApiResponse<T> {
 		return new ApiResponse<T>(Status.SecurityError, LocalDateTime.now(), data);
 	}
 
+	public static <T> ApiResponse<T> idNotFound(T data) {
+		return new ApiResponse<T>(Status.NOT_FOUND, LocalDateTime.now(), data);
+	}
+
     public enum Status {
 		Success,
 		ValidationError,

@@ -69,5 +69,4 @@ public class MovieController {
             return ApiResponse.error(ApiResponse.Status.INTERNAL_SERVER_ERROR, "Internal Server Error");
         }
     }
-
 }

@@ -9,6 +9,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -45,4 +47,12 @@ public class Actor {
 
     @ManyToMany(mappedBy = "actors")
     private List<Movie> movies;
+
+    @ManyToMany
+    @JoinTable(
+        name = "actor_award",
+        joinColumns = @JoinColumn(name = "actor_id"),
+        inverseJoinColumns = @JoinColumn(name = "award_id")
+    )
+    private List<Award> awards;
 }
