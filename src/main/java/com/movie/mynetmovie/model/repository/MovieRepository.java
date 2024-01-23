@@ -1,4 +1,4 @@
-package com.movie.mynetmovie.repository;
+package com.movie.mynetmovie.model.repository;
 
 import java.util.UUID;
 

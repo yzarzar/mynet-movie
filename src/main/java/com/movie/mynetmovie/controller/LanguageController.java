@@ -6,8 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.movie.mynetmovie.model.entity.Actor;
-import com.movie.mynetmovie.model.entity.Award;
 import com.movie.mynetmovie.model.entity.Language;
 import com.movie.mynetmovie.model.entity.Movie;
 import com.movie.mynetmovie.service.LanguageService;

@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.movie.mynetmovie.model.entity.Language;
-import com.movie.mynetmovie.repository.LanguageRepository;
+import com.movie.mynetmovie.model.repository.LanguageRepository;
 import com.movie.mynetmovie.service.LanguageService;
 
 import lombok.NonNull;

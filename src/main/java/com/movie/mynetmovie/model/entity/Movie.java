@@ -26,6 +26,7 @@ public class Movie {
     @Column(columnDefinition = "BINARY(16)")
     private UUID id = UUID.randomUUID();
     private String title;
+    private String fileName;
 
     @Column(columnDefinition = "TEXT")
     private String plot;

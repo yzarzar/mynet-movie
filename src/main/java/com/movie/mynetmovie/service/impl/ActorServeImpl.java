@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.movie.mynetmovie.model.entity.Actor;
-import com.movie.mynetmovie.repository.ActorRepository;
+import com.movie.mynetmovie.model.repository.ActorRepository;
 import com.movie.mynetmovie.service.ActorService;
 
 import lombok.NonNull;

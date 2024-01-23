@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.movie.mynetmovie.model.entity.Award;
-import com.movie.mynetmovie.repository.AwardRepository;
+import com.movie.mynetmovie.model.repository.AwardRepository;
 import com.movie.mynetmovie.service.AwardService;
 
 import lombok.NonNull;
